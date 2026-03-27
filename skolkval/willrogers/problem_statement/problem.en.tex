@@ -1,0 +1,26 @@
+\problemname{Will Rogers Phenomenon}
+Will Rogers (1879--1935) was an American comedian known for, among other things, the following quote:
+
+\emph{``When the Okies left Oklahoma and moved to California, they raised the average intelligence level in both states.''}
+
+This apparent paradox, that moving an element from one set to another can cause the average to increase in both sets, has therefore been named the Will Rogers phenomenon.
+You are to write a program that reads two groups A and B, each consisting of at least two and at most ten positive integers, and determines whether it is possible to move one number from one group to the other so that the average increases in both groups, and if so, which number should be moved to which group.
+
+\section*{Input}
+The first line consists of two numbers: the number of elements in the first group, and the number of elements in the second group (both between 1 and 10).
+Then follows a line with the numbers in the first group, and a line with the numbers in the second group.
+
+All numbers will be between $1$ and $20$.
+
+\section*{Output}
+If it is possible to move a number from one group to the other to increase the average in both, output a line with the number to be moved and which group it should be moved to.
+If there are multiple possibilities, it suffices to output one of them.
+
+If it is not possible, output \texttt{NEJ}.
+
+\section*{Explanation of Samples}
+In the first sample, the averages are $2$ and $4$ respectively before the move.
+After moving the number $3$ from B to A, the averages become $2.25$ and $4.333\ldots$ respectively.
+
+In the second sample, the phenomenon cannot occur.
+If one moves, for example, the number $5$ from A to B, then the average of group A increases but the average of group B remains unchanged.
